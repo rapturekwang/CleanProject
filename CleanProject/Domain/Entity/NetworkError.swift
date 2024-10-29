@@ -9,7 +9,7 @@ import Foundation
 
 public enum NetworkError: Error {
     case urlError
-    case invalid
+    case invalidResponse
     case failToDecode(String)
     case dataNil
     case serverError(Int)
@@ -19,7 +19,7 @@ public enum NetworkError: Error {
         switch self {
         case .urlError:
             "URL error"
-        case .invalid:
+        case .invalidResponse:
             "is not vailed"
         case .failToDecode(let description):
             "decode error \(description)"

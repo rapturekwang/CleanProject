@@ -20,7 +20,18 @@
 		2EE4E24F2CCF724400CD3FAD /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E24E2CCF724400CD3FAD /* NetworkError.swift */; };
 		2EE4E2512CCF757D00CD3FAD /* CoreDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E2502CCF757D00CD3FAD /* CoreDataError.swift */; };
 		2EE4E2532CCF76F100CD3FAD /* UserListUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E2522CCF76F100CD3FAD /* UserListUsecase.swift */; };
-		2EE4E2562CCF80A700CD3FAD /* UserListRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E2552CCF80A700CD3FAD /* UserListRepositoryProtocol.swift */; };
+		2EE4E2562CCF80A700CD3FAD /* UserRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E2552CCF80A700CD3FAD /* UserRepositoryProtocol.swift */; };
+		2EE4E2612CCFB7EE00CD3FAD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2EE4E2602CCFB7EE00CD3FAD /* Alamofire */; };
+		2EE4E2632CCFB7F200CD3FAD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2EE4E2622CCFB7F200CD3FAD /* Kingfisher */; };
+		2EE4E2652CCFB7F800CD3FAD /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2EE4E2642CCFB7F800CD3FAD /* RxSwift */; };
+		2EE4E2672CCFB7FB00CD3FAD /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 2EE4E2662CCFB7FB00CD3FAD /* RxCocoa */; };
+		2EE4E2692CCFB7FF00CD3FAD /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2EE4E2682CCFB7FF00CD3FAD /* SnapKit */; };
+		2EE4E26B2CCFBA0800CD3FAD /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E26A2CCFBA0800CD3FAD /* UserSession.swift */; };
+		2EE4E26D2CCFBDE600CD3FAD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E26C2CCFBDE600CD3FAD /* NetworkManager.swift */; };
+		2EE4E26F2CCFC6F700CD3FAD /* UserNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E26E2CCFC6F700CD3FAD /* UserNetwork.swift */; };
+		2EE4E2722CD074FD00CD3FAD /* CleanProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E2702CD074FC00CD3FAD /* CleanProject.xcdatamodeld */; };
+		2EE4E2B32CD084F300CD3FAD /* UserCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E2B22CD084F300CD3FAD /* UserCoreData.swift */; };
+		2EE4E2B52CD096FD00CD3FAD /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E2B42CD096FD00CD3FAD /* UserRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +69,13 @@
 		2EE4E24E2CCF724400CD3FAD /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		2EE4E2502CCF757D00CD3FAD /* CoreDataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataError.swift; sourceTree = "<group>"; };
 		2EE4E2522CCF76F100CD3FAD /* UserListUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListUsecase.swift; sourceTree = "<group>"; };
-		2EE4E2552CCF80A700CD3FAD /* UserListRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListRepositoryProtocol.swift; sourceTree = "<group>"; };
+		2EE4E2552CCF80A700CD3FAD /* UserRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryProtocol.swift; sourceTree = "<group>"; };
+		2EE4E26A2CCFBA0800CD3FAD /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		2EE4E26C2CCFBDE600CD3FAD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2EE4E26E2CCFC6F700CD3FAD /* UserNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNetwork.swift; sourceTree = "<group>"; };
+		2EE4E2712CD074FD00CD3FAD /* CleanProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CleanProject.xcdatamodel; sourceTree = "<group>"; };
+		2EE4E2B22CD084F300CD3FAD /* UserCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCoreData.swift; sourceTree = "<group>"; };
+		2EE4E2B42CD096FD00CD3FAD /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +83,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EE4E2652CCFB7F800CD3FAD /* RxSwift in Frameworks */,
+				2EE4E2632CCFB7F200CD3FAD /* Kingfisher in Frameworks */,
+				2EE4E2672CCFB7FB00CD3FAD /* RxCocoa in Frameworks */,
+				2EE4E2612CCFB7EE00CD3FAD /* Alamofire in Frameworks */,
+				2EE4E2692CCFB7FF00CD3FAD /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +115,7 @@
 				2EE4E22E2CCF6E5800CD3FAD /* CleanProjectTests */,
 				2EE4E2382CCF6E5800CD3FAD /* CleanProjectUITests */,
 				2EE4E2162CCF6E5700CD3FAD /* Products */,
+				2EE4E25F2CCFB7EE00CD3FAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,14 +132,16 @@
 		2EE4E2172CCF6E5700CD3FAD /* CleanProject */ = {
 			isa = PBXGroup;
 			children = (
-				2EE4E2492CCF6EAD00CD3FAD /* Domain */,
 				2EE4E2182CCF6E5700CD3FAD /* AppDelegate.swift */,
 				2EE4E21A2CCF6E5700CD3FAD /* SceneDelegate.swift */,
 				2EE4E21C2CCF6E5700CD3FAD /* ViewController.swift */,
+				2EE4E2572CCFB43B00CD3FAD /* Data */,
+				2EE4E2492CCF6EAD00CD3FAD /* Domain */,
 				2EE4E21E2CCF6E5700CD3FAD /* Main.storyboard */,
 				2EE4E2212CCF6E5800CD3FAD /* Assets.xcassets */,
 				2EE4E2232CCF6E5800CD3FAD /* LaunchScreen.storyboard */,
 				2EE4E2262CCF6E5800CD3FAD /* Info.plist */,
+				2EE4E2702CD074FC00CD3FAD /* CleanProject.xcdatamodeld */,
 			);
 			path = CleanProject;
 			sourceTree = "<group>";
@@ -169,9 +194,52 @@
 		2EE4E2542CCF808D00CD3FAD /* RepositoryProtocol */ = {
 			isa = PBXGroup;
 			children = (
-				2EE4E2552CCF80A700CD3FAD /* UserListRepositoryProtocol.swift */,
+				2EE4E2552CCF80A700CD3FAD /* UserRepositoryProtocol.swift */,
 			);
 			path = RepositoryProtocol;
+			sourceTree = "<group>";
+		};
+		2EE4E2572CCFB43B00CD3FAD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2EE4E25A2CCFB46400CD3FAD /* Repository */,
+				2EE4E2592CCFB45000CD3FAD /* CoreData */,
+				2EE4E2582CCFB44100CD3FAD /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2EE4E2582CCFB44100CD3FAD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2EE4E26A2CCFBA0800CD3FAD /* UserSession.swift */,
+				2EE4E26C2CCFBDE600CD3FAD /* NetworkManager.swift */,
+				2EE4E26E2CCFC6F700CD3FAD /* UserNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2EE4E2592CCFB45000CD3FAD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2EE4E2B22CD084F300CD3FAD /* UserCoreData.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		2EE4E25A2CCFB46400CD3FAD /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2EE4E2B42CD096FD00CD3FAD /* UserRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		2EE4E25F2CCFB7EE00CD3FAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +258,13 @@
 			dependencies = (
 			);
 			name = CleanProject;
+			packageProductDependencies = (
+				2EE4E2602CCFB7EE00CD3FAD /* Alamofire */,
+				2EE4E2622CCFB7F200CD3FAD /* Kingfisher */,
+				2EE4E2642CCFB7F800CD3FAD /* RxSwift */,
+				2EE4E2662CCFB7FB00CD3FAD /* RxCocoa */,
+				2EE4E2682CCFB7FF00CD3FAD /* SnapKit */,
+			);
 			productName = CleanProject;
 			productReference = 2EE4E2152CCF6E5700CD3FAD /* CleanProject.app */;
 			productType = "com.apple.product-type.application";
@@ -262,6 +337,12 @@
 				Base,
 			);
 			mainGroup = 2EE4E20C2CCF6E5700CD3FAD;
+			packageReferences = (
+				2EE4E25B2CCFB4D000CD3FAD /* XCRemoteSwiftPackageReference "Alamofire" */,
+				2EE4E25C2CCFB67B00CD3FAD /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				2EE4E25D2CCFB68900CD3FAD /* XCRemoteSwiftPackageReference "RxSwift" */,
+				2EE4E25E2CCFB6AF00CD3FAD /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 2EE4E2162CCF6E5700CD3FAD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -305,13 +386,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EE4E2562CCF80A700CD3FAD /* UserListRepositoryProtocol.swift in Sources */,
+				2EE4E2562CCF80A700CD3FAD /* UserRepositoryProtocol.swift in Sources */,
 				2EE4E21D2CCF6E5700CD3FAD /* ViewController.swift in Sources */,
+				2EE4E26D2CCFBDE600CD3FAD /* NetworkManager.swift in Sources */,
+				2EE4E2722CD074FD00CD3FAD /* CleanProject.xcdatamodeld in Sources */,
 				2EE4E2532CCF76F100CD3FAD /* UserListUsecase.swift in Sources */,
 				2EE4E2192CCF6E5700CD3FAD /* AppDelegate.swift in Sources */,
 				2EE4E21B2CCF6E5700CD3FAD /* SceneDelegate.swift in Sources */,
+				2EE4E26F2CCFC6F700CD3FAD /* UserNetwork.swift in Sources */,
 				2EE4E24D2CCF6EF400CD3FAD /* UserListItem.swift in Sources */,
+				2EE4E26B2CCFBA0800CD3FAD /* UserSession.swift in Sources */,
+				2EE4E2B52CD096FD00CD3FAD /* UserRepository.swift in Sources */,
 				2EE4E24F2CCF724400CD3FAD /* NetworkError.swift in Sources */,
+				2EE4E2B32CD084F300CD3FAD /* UserCoreData.swift in Sources */,
 				2EE4E2512CCF757D00CD3FAD /* CoreDataError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -659,6 +746,82 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2EE4E25B2CCFB4D000CD3FAD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
+		2EE4E25C2CCFB67B00CD3FAD /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.0;
+			};
+		};
+		2EE4E25D2CCFB68900CD3FAD /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.8.0;
+			};
+		};
+		2EE4E25E2CCFB6AF00CD3FAD /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2EE4E2602CCFB7EE00CD3FAD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2EE4E25B2CCFB4D000CD3FAD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		2EE4E2622CCFB7F200CD3FAD /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2EE4E25C2CCFB67B00CD3FAD /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		2EE4E2642CCFB7F800CD3FAD /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2EE4E25D2CCFB68900CD3FAD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		2EE4E2662CCFB7FB00CD3FAD /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2EE4E25D2CCFB68900CD3FAD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		2EE4E2682CCFB7FF00CD3FAD /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2EE4E25E2CCFB6AF00CD3FAD /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		2EE4E2702CD074FC00CD3FAD /* CleanProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2EE4E2712CD074FD00CD3FAD /* CleanProject.xcdatamodel */,
+			);
+			currentVersion = 2EE4E2712CD074FD00CD3FAD /* CleanProject.xcdatamodel */;
+			path = CleanProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2EE4E20D2CCF6E5700CD3FAD /* Project object */;
 }

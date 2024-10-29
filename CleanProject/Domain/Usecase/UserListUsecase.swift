@@ -18,9 +18,9 @@ public protocol UserListUsecaseProtocol {
 }
 
 public struct UserListUsecase: UserListUsecaseProtocol {
-    private let repository: UserListRepositoryProtocol
+    private let repository: UserRepositoryProtocol
     
-    public init(repository: UserListRepositoryProtocol) {
+    public init(repository: UserRepositoryProtocol) {
         self.repository = repository
     }
     public func fetchUser(query: String, page: Int) async -> Result<UserListResult, NetworkError> {
