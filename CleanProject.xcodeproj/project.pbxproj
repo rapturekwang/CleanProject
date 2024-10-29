@@ -32,6 +32,8 @@
 		2EE4E2722CD074FD00CD3FAD /* CleanProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E2702CD074FC00CD3FAD /* CleanProject.xcdatamodeld */; };
 		2EE4E2B32CD084F300CD3FAD /* UserCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E2B22CD084F300CD3FAD /* UserCoreData.swift */; };
 		2EE4E2B52CD096FD00CD3FAD /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E2B42CD096FD00CD3FAD /* UserRepository.swift */; };
+		2EE4E2B72CD0AC2300CD3FAD /* UserUsercaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E2B62CD0AC2300CD3FAD /* UserUsercaseTests.swift */; };
+		2EE4E2BA2CD0AEA500CD3FAD /* MockUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E2B92CD0AEA500CD3FAD /* MockUserRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		2EE4E2712CD074FD00CD3FAD /* CleanProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CleanProject.xcdatamodel; sourceTree = "<group>"; };
 		2EE4E2B22CD084F300CD3FAD /* UserCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCoreData.swift; sourceTree = "<group>"; };
 		2EE4E2B42CD096FD00CD3FAD /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		2EE4E2B62CD0AC2300CD3FAD /* UserUsercaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUsercaseTests.swift; sourceTree = "<group>"; };
+		2EE4E2B92CD0AEA500CD3FAD /* MockUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +153,9 @@
 		2EE4E22E2CCF6E5800CD3FAD /* CleanProjectTests */ = {
 			isa = PBXGroup;
 			children = (
+				2EE4E2B82CD0AE9100CD3FAD /* Mock */,
 				2EE4E22F2CCF6E5800CD3FAD /* CleanProjectTests.swift */,
+				2EE4E2B62CD0AC2300CD3FAD /* UserUsercaseTests.swift */,
 			);
 			path = CleanProjectTests;
 			sourceTree = "<group>";
@@ -240,6 +246,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2EE4E2B82CD0AE9100CD3FAD /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				2EE4E2B92CD0AEA500CD3FAD /* MockUserRepository.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,7 +421,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EE4E2BA2CD0AEA500CD3FAD /* MockUserRepository.swift in Sources */,
 				2EE4E2302CCF6E5800CD3FAD /* CleanProjectTests.swift in Sources */,
+				2EE4E2B72CD0AC2300CD3FAD /* UserUsercaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
