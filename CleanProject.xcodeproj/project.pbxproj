@@ -34,6 +34,7 @@
 		2EE4E2B52CD096FD00CD3FAD /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E2B42CD096FD00CD3FAD /* UserRepository.swift */; };
 		2EE4E2B72CD0AC2300CD3FAD /* UserUsercaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E2B62CD0AC2300CD3FAD /* UserUsercaseTests.swift */; };
 		2EE4E2BA2CD0AEA500CD3FAD /* MockUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E2B92CD0AEA500CD3FAD /* MockUserRepository.swift */; };
+		2EE4E2BE2CD0BAD300CD3FAD /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E2BD2CD0BAD300CD3FAD /* UserListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		2EE4E2B42CD096FD00CD3FAD /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		2EE4E2B62CD0AC2300CD3FAD /* UserUsercaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUsercaseTests.swift; sourceTree = "<group>"; };
 		2EE4E2B92CD0AEA500CD3FAD /* MockUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserRepository.swift; sourceTree = "<group>"; };
+		2EE4E2BD2CD0BAD300CD3FAD /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		2EE4E2172CCF6E5700CD3FAD /* CleanProject */ = {
 			isa = PBXGroup;
 			children = (
+				2EE4E2BB2CD0BABC00CD3FAD /* Presentation */,
 				2EE4E2182CCF6E5700CD3FAD /* AppDelegate.swift */,
 				2EE4E21A2CCF6E5700CD3FAD /* SceneDelegate.swift */,
 				2EE4E21C2CCF6E5700CD3FAD /* ViewController.swift */,
@@ -254,6 +257,22 @@
 				2EE4E2B92CD0AEA500CD3FAD /* MockUserRepository.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		2EE4E2BB2CD0BABC00CD3FAD /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2EE4E2BC2CD0BAC300CD3FAD /* ViewModel */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		2EE4E2BC2CD0BAC300CD3FAD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2EE4E2BD2CD0BAD300CD3FAD /* UserListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,6 +423,7 @@
 				2EE4E21D2CCF6E5700CD3FAD /* ViewController.swift in Sources */,
 				2EE4E26D2CCFBDE600CD3FAD /* NetworkManager.swift in Sources */,
 				2EE4E2722CD074FD00CD3FAD /* CleanProject.xcdatamodeld in Sources */,
+				2EE4E2BE2CD0BAD300CD3FAD /* UserListViewModel.swift in Sources */,
 				2EE4E2532CCF76F100CD3FAD /* UserListUsecase.swift in Sources */,
 				2EE4E2192CCF6E5700CD3FAD /* AppDelegate.swift in Sources */,
 				2EE4E21B2CCF6E5700CD3FAD /* SceneDelegate.swift in Sources */,
