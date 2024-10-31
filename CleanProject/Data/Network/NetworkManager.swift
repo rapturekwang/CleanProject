@@ -12,19 +12,21 @@ public protocol NetworkManagerProtocol {
     func fetchData<T: Decodable>(url: String, method: HTTPMethod, parameters: Parameters?) async -> Result<T, NetworkError>
 }
 
-public class NetworkManager {
+public class NetworkManager: NetworkManagerProtocol {
     private let session: SessionProtocol
     init(session: SessionProtocol) {
         self.session = session
     }
     
     private let headers: HTTPHeaders = {
-        let tokenHeader = HTTPHeader(name: "Authorization", value: "Bearer ")
+        let tokenArray = Bundle.main.object(forInfoDictionaryKey: "TokenArray") as? [String]
+        let toekn = tokenArray?.reduce("") { $0 + $1 } ?? ""
+        let tokenHeader = HTTPHeader(name: "Authorization", value: "Bearer ghp_\(toekn)")
         
         return HTTPHeaders([tokenHeader])
     }()
     
-    func fetchData<T: Decodable>(url: String, method: HTTPMethod, parameters: Parameters?) async -> Result<T, NetworkError> {
+    public func fetchData<T: Decodable>(url: String, method: HTTPMethod, parameters: Parameters?) async -> Result<T, NetworkError> {
         guard let url = URL(string: url) else {
             return .failure(.urlError)
         }

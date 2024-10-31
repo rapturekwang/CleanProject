@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 
 protocol UserListViewModelProtocol {
-    
+    func transform(input: UserListViewModel.Input) -> UserListViewModel.Output
 }
 
 public final class UserListViewModel: UserListViewModelProtocol {
@@ -105,10 +105,10 @@ public final class UserListViewModel: UserListViewModelProtocol {
     private func fetchUser(query: String, page: Int) {
         guard let urlAllowedQuery = query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return }
         Task {
-            let result = await usecase.fetchUser(query: query, page: page)
+            let result = await usecase.fetchUser(query: urlAllowedQuery, page: page)
             switch result {
             case let .success(users):
-                if page == 0 {
+                if page == 1 {
                     fetchUserList.accept(users.items)
                 } else {
                     fetchUserList.accept(fetchUserList.value + users.items)
@@ -127,7 +127,7 @@ public final class UserListViewModel: UserListViewModelProtocol {
                 favoriteUserList.accept(users)
             } else {
                 let filteredUsers = users.filter{ user in
-                    user.login.contains(query)
+                    user.login.contains(query.lowercased())
                 }
                 favoriteUserList.accept(filteredUsers)
             }
@@ -166,12 +166,23 @@ public final class UserListViewModel: UserListViewModelProtocol {
     }
 }
 
-public enum TabButtonType {
-    case api
-    case favorite
+public enum TabButtonType: String {
+    case api = "API"
+    case favorite = "Favorite"
 }
 
 public enum UserListCellData {
     case user(user: UserListItem, isFavorite: Bool)
     case header(String)
+    
+    var id: String {
+        switch self {
+        case .header: HeaderTableViewCell.id
+        case .user: UserTableViewCell.id
+        }
+    }
+}
+
+protocol UserListCellProtocol {
+    func apply(cellData: UserListCellData)
 }

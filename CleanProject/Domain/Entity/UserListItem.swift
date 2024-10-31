@@ -14,7 +14,7 @@ public struct UserListResult: Decodable {
     
     enum CodingKeys: String, CodingKey {
         case totalCount = "total_count"
-        case incompleteResults = "oncomplete_results"
+        case incompleteResults = "incomplete_results"
         case items
     }
     
